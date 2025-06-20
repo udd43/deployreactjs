@@ -9,14 +9,15 @@ on:
 
 env:
   DOCKER_IMAGE: springbootreactjs
-  DOCKER_TAG: client0.2
+  DOCKER_TAG: client0.1
   
 jobs:
   Docker:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout Code
+      # 소스 코드 체크아웃
+	    - name: Checkout Code
         uses: actions/checkout@v4
 
       # Docker Hub 로그인
